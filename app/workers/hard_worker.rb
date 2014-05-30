@@ -6,7 +6,7 @@ class HardWorker
     json = 
     { 
       queue: queue,
-      class: self.class.to_s,
+      class: "HardWorker",
        args: args,
         jid: SecureRandom.hex(12),
 enqueued_at: Time.now.to_f
