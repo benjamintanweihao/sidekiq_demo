@@ -21,3 +21,7 @@ enqueued_at: Time.now.to_f
   end
   
 end
+
+
+# This is executed in a thread
+GithubStatsWorker.new.perform("bentanweihao")
